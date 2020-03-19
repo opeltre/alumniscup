@@ -1,0 +1,148 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Alumni's Cup </title>
+
+    <link rel="stylesheet" href="style/alumni.css"> 
+    <link rel="stylesheet" href="style/layout.css"> 
+    <link rel="stylesheet" href="style/fonts.css"> 
+    <link rel="stylesheet" href="style/inscription.css"> 
+    
+    <script src="/src/ajax.js"></script>
+    <script src="/src/inscription.js"></script> 
+</head> 
+
+<body class="bg-bleu white">
+<div class="strip bg-bleu"> 
+
+    <h1> Inscription </h1> 
+    <div class="rule flex-h"> 
+        <span class="grow"> 27-28 juin </span> 
+        <span class="grow"> 17-18 octobre </span> 
+    </div> 
+
+    <p>
+    Les inscriptions à l'Alumni's Cup 2020 seront ouvertes jusqu'au dimanche 10 mai. 
+    </p>
+
+    <p> 
+    Priorité est donnée aux équipages s'inscrivant pour les 
+    deux tours de l'Alumni's Cup. 
+    Seule la participation aux deux tours permet de figurer au classement 
+    final et de prétendre à la coupe. <!-- &#x1F3C6; -->
+    </p>  
+
+    <p> 
+    Après envoi du formulaire ci-dessous, 
+    l'inscription d'un équipage sera validée dès réception du paiement. 
+    </p>
+    <div class="flex-h"> 
+        <table> 
+            <tr> 
+                <th> coupe </th> <th> tour </th>
+            </tr> <tr>  
+                <td> 1250€ </td> <td> 700€ </td> 
+            </tr> <tr> 
+                <td> 130€/tour/p </td> <td> 140€/tour/p </td> 
+            </tr> 
+        </table> 
+        <div> 
+        <ul> 
+            <li> location du bateau </li>
+            <li> prestations techniques de la SRH </li>
+            <li> frais d'association </li>
+            <li> dîner des équipages! </li>
+        </ul> 
+        </div> 
+    </div> 
+    <p>
+    Pour s'inscrire au premier ou au deuxième tour uniquement, 
+    la validation est reportée au 20 avril et au 20 juin respectivement.
+    </p> 
+
+    <form class="blue bg-white">
+    <fieldset> 
+    <legend align="right"> LE FORMULAIRE </legend> 
+
+        <div class="field">
+            <label for="ecole"> &Eacute;cole ou université: </label>
+            <input name="ecole" type="text"> 
+        </div> 
+        <div class="field">
+            <label for="equipage"> Nom d'équipage: </label>
+            <input name="equipage" type="text" placeholder="facultatif"> 
+        </div> 
+        <div class="field">
+            <label for="prenom"> Prénom: </label> 
+            <input name="prenom" type="text"> 
+        </div> 
+        <div class="field">
+            <label for="nom"> Nom: </label>
+            <input name="nom" type="text"> 
+        </div> 
+        <div class="field">
+            <label for="email"> Mail: </label> 
+            <input name="email" type="text"> 
+        </div> 
+        <div class="field">
+            <label for="telephone"> Téléphone: </label> 
+            <input name="telephone" type="text"> 
+        </div> 
+        
+        <div id="tours">
+            Parmi les deux tours de l'Alumni's Cup, je souhaite m'inscrire pour:
+            <div class="flex-h radio center"> 
+                <span> 
+                    <input type="radio" id="t12" name="tours" value="1+2" checked> 
+                    <br>
+                    <label for="t12"> les deux  </label> 
+                </span> 
+                <span>
+                    <input type="radio" id="t1" name="tours" value="1">
+                    <br>
+                    <label for="t1"> tour 1 </label> 
+                </span>
+                <span>
+                    <input type="radio" id="t2" name="tours" value="2"> 
+                    <br>
+                    <label for="t2"> tour 2 </label> 
+                </span> 
+            </div> 
+        </div>  
+
+        <div id="srh"> 
+        Je loue un bateau à l'année auprès de la SRH: 
+            <div class="flex-h radio center">  
+                <span>
+                    <input type="radio" id="srh-non" name="srh" value="non" checked> 
+                    <br>
+                    <label for="srh-non"> non </label> 
+                </span> 
+                <span> 
+                    <input type="radio" id="srh-oui" name="srh" value="oui"> 
+                    <br>
+                    <label for="srh-oui"> oui  </label> 
+                </span>
+            </div>
+        </div> 
+        
+        <div>   
+        <button type="submit" class="right bg-red white"> 
+            Envoyer 
+        </button> 
+        </div> 
+
+    </fieldset> 
+    </form> 
+
+    <div class="center"> 
+        <a href="/">retour au site</a> 
+    </div> 
+
+    </div> 
+
+
+
+
+</body>
+</html>
