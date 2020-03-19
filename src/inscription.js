@@ -21,7 +21,8 @@ let thankYou =
         let span = document.createElement('h4');
         span.innerHTML = 
             `Merci! Ta demande d'inscription a bien été prise en compte, `
-        +   `un message a été envoyé à: ${email}`;
+        +   `un message a été envoyé à: ${email} <br><br>`
+        +   `<strong>N.B: Pense à vérifier tes courriers indésirables!</strong>` ;
         query('form button').replaceWith(span);
         return 0;
     };

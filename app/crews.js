@@ -25,6 +25,14 @@ let insert =
     `INSERT INTO inscriptions ${sqlArray(fields)} ` 
     + `VALUES ${sqlArray(fields.map(() => "?"))}`  
 
+let csvRow = 
+    row => row.join('\t\t,') + '\n';
+
+let csv = 
+    rows => csvRow(fields) + rows.map(r => csvRow(
+        fields.map(f => r[f].replace('\t', ''))
+    ));
+
 
 let get = 
     
@@ -32,7 +40,10 @@ let get =
 
         mariadb.createConnection(auth)
             .then(c => c.query("SELECT * FROM inscriptions")
-                .then(rows => res.send(JSON.stringify(rows)))
+                .then(rows => req.path === '/crews' 
+                    ? res.send(JSON.stringify(rows))
+                    : res.end(csv(rows))
+                )
                 .catch(console.log)
             );
     };

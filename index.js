@@ -30,7 +30,10 @@ app.post('/inscription', (req, res) => {
 
 app.get('/crews', crews.get);
 
+app.get('/equipages/csv', crews.get);
+
 app.get('/equipages', sendFile('html/equipages.html'));
+
 
 //--- subscribe ---
 
