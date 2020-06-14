@@ -24,16 +24,17 @@ body, html {
     color: #151a2c;
 }
 .bg-blue {
-    background-color: #151a2c;
+    background-color: #4c81a1;
+    
 }
 .bg-bleu {
     background-color: #5c96c8;
 }
 .red {
-    color: #e84a43;
+    color: #ca5343;
 }
 .bg-red {
-    background-color: #e84a43;
+    background-color: #ca5343;
 }
 .white {
     color: #fff;
